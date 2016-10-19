@@ -1,0 +1,13 @@
+# Rules for Recommended by prh
+meta:
+  reviewer:
+    - vvakame
+  related: https://github.com/prh/rules 
+  rules:   https://github.com/prh/rules
+
+version: 1
+imports:
+  - ./language/ja/index.yml
+  - ./language/ja/typo.yml
+  - ./technical-term/software.yml
+  - ./trademark/index.yml

@@ -1,0 +1,31 @@
+# Rules for Japanese
+meta:
+  reviewer:
+    - vvakame
+    - mhidaka
+  related: http://techbooster.org/
+  rules:   https://github.com/prh/rules
+
+# C89 冬コミ開始前時点で利用している版だよ！
+version: 1
+rules:
+  - expected: TechBooster
+    pattern: てっくぶーすたー
+    prh: 警告メッセージのカスタマイズができるよ！
+  # 記号
+  # 半角括弧を全角括弧に
+  - expected: （$1）
+    pattern:  /\((.+?)\)/
+    specs:
+      - from: そうですね(笑)
+        to:   そうですね（笑）
+      - from: (@<fn>{test})
+        to:   （@<fn>{test}）
+      - from: "(ほげ)ほげ)"
+        to:   "（ほげ）ほげ)"
+    prh: 半角カッコの代わりに全角カッコを使うこと。文字のバランスが崩れるためです
+  # TODO 英単語の前後の空白を殺す
+
+  - expected: ライブラリ
+    pattern:  ラブライブ
+    prh: C87でざきさんがやらかした思い出
