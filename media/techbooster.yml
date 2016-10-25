@@ -8,6 +8,11 @@ meta:
 
 # C89 冬コミ開始前時点で利用している版だよ！
 version: 1
+imports:
+  - ../languages/ja/typo.yml
+  - ../terms/software.yml
+  - ../terms/review.yml
+  - ../terms/trademark.yml
 rules:
   - expected: TechBooster
     pattern: てっくぶーすたー
