@@ -1,4 +1,4 @@
-# A collection of prh rules
+# A collection of prh rules [![CircleCI](https://circleci.com/gh/prh/rules.svg?style=svg)](https://circleci.com/gh/prh/rules)
 
 ## フォルダ構成
 
