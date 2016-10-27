@@ -8,3 +8,5 @@ meta:
 version: 1
 rules:
   - expected: Web
+  - expected: superset
+    pattern:  super set
