@@ -475,8 +475,8 @@ rules:
     expected: しくみ
   - pattern: しし
     expected: し
-  - pattern: 次第
-    expected: しだい
+  - pattern: しだい
+    expected: 次第
   - pattern:
       - 暫く
       - 暫らく
@@ -587,8 +587,13 @@ rules:
     expected: づら$1
   - pattern: んで([たなるろよ])
     expected: んでい$1
-  - pattern: てな
+  - pattern: /てな(?!く)/
     expected: ていな
+    specs:
+      - from: わかってない
+        to:   わかっていない
+      - from: 消えてなくなる
+        to:   消えてなくなる
   - pattern: /([^捨当立])てる/
     expected: $1ている
   - pattern: /出来([かがのをは過す損ずなまるたれてそ])/
@@ -986,8 +991,13 @@ rules:
     expected: やむを得
   - pattern: すこし
     expected: 少し
-  - pattern: すくな
+  - pattern: /すくな(?!り|る)/
     expected: 少な
+    specs:
+      - from: すくなく
+        to:   少なく
+      - from: わかりやすくなり
+        to:   わかりやすくなり
   - pattern: 少い
     expected: 少ない
   - pattern: おこし
