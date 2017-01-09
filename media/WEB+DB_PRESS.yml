@@ -2053,7 +2053,7 @@ rules:
   - expected: ペアプログラミング$1
     pattern:  /ペアプロ([^グ])/
   - expected: ベンダー
-    pattern:  /ベンダ/
+    pattern:  /ベンダ([^ー])/
   - expected: ヘッダ
     pattern:  /ヘッダー|ヘッタ|ヘッター/
   - expected: ベクタ
