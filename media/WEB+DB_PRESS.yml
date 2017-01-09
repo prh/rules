@@ -631,7 +631,7 @@ rules:
     expected: どこ
   - pattern: 途端
     expected: とたん
-  - pattern: /留([まめ])/
+  - pattern: /(<!ピン)留([まめ])/
     expected: とど$1
   - pattern: /とは言え([^なまる])/
     expected: とはいえ$1
