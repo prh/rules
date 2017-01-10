@@ -1167,7 +1167,7 @@ rules:
     expected: 疎結合
   - pattern: 確かに
     expected: たしかに
-  - pattern: たしか
+  - pattern: /たしか([^に])/
     expected: 確か
   - pattern: /確め([たなまれる])/
     expected: 確かめ$1
@@ -2053,7 +2053,7 @@ rules:
   - expected: ペアプログラミング$1
     pattern:  /ペアプロ([^グ])/
   - expected: ベンダー
-    pattern:  /ベンダ/
+    pattern:  /ベンダ([^ー])/
   - expected: ヘッダ
     pattern:  /ヘッダー|ヘッタ|ヘッター/
   - expected: ベクタ
