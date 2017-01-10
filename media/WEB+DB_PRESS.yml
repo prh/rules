@@ -1167,7 +1167,7 @@ rules:
     expected: 疎結合
   - pattern: 確かに
     expected: たしかに
-  - pattern: たしか
+  - pattern: /たしか([^に])/
     expected: 確か
   - pattern: /確め([たなまれる])/
     expected: 確かめ$1
