@@ -631,8 +631,14 @@ rules:
     expected: どこ
   - pattern: 途端
     expected: とたん
-  - pattern: /(<!ピン)留([まめ])/
-    expected: とど$1
+  - pattern: /(ピン)?留([まめ])/
+    regexpMustEmpty: $1
+    expected: とど$2
+    specs:
+      - from: ピン留め
+        to:   ピン留め
+      - from: 踏み留まる
+        to:   踏みとどまる
   - pattern: /とは言え([^なまる])/
     expected: とはいえ$1
   - pattern: 共に
