@@ -39,6 +39,9 @@ rules:
   - expected: いう
     pattern:  言う
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
+  - expected: いわ
+    pattern:  言わ
+    prh: 呼ぶ、で代替するか漢字で書かず、ひらがなで書くと読みやすくなります。
   - expected: さまざま
     pattern:  様々
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
@@ -70,7 +73,7 @@ rules:
     pattern:  既に
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
   - expected: すべて
-    pattern:  全て
+    pattern:  /(全て|総て)/
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
   - expected: たとえば
     pattern:  例えば
@@ -98,6 +101,8 @@ rules:
         to:   記事
       - from: 事件
         to:   事件
+      - from: 事象
+        to:   事象
   - expected: $1とき
     pattern:  /(の)時(?!点|代|々|間)/
     specs:
@@ -188,6 +193,42 @@ rules:
   - expected: はやる
     pattern:  流行る
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
+  - expected: のよう
+    pattern:  の様
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: まったく
+    pattern:  全く
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: さきほど
+    pattern:  先程
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: あるいは
+    pattern:  或いは
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: はじめて
+    pattern:  初めて
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: どういうとき
+    pattern:  どういう時
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: いくつか
+    pattern:  幾つか
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+  - expected: 下げ
+    pattern:  さげ
+    prh: ひらがなで書かず、漢字で「下げ」と読みやすくなります。
+  - expected: もら$1
+    pattern:  /貰(う|い)/
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+    specs:
+      - from: 貰う
+        to:   もらう
+      - from: 貰い
+        to:   もらい
+  - expected: いったん
+    pattern:  一旦
+    prh: 漢字で書かず、ひらがなで書くと読みやすくなります。
+
   # 通常は、ひとつ。数詞は１つ、漢数字は数えられる固有名詞を指す場合に利用
   - expected: ひとつ
     pattern:  一つ
