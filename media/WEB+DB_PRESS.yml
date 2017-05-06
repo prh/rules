@@ -2447,13 +2447,11 @@ rules:
   - expected: GitHub Pages
     pattern:  /\bGitHub Pages\b/i
   - expected: GitHub Enterprise
-    pattern:  /GH\:E|\bGHE\b|GitHub\:E/
+    pattern:  /GH:E|\bGHE\b|GitHub:E/
   - expected: $1GitHub$2
     pattern:  /(?:([^/.])\bgithub)|(?:github\b([^/.]))/
   - expected: $1GitHub$2
     pattern:  /(?:([^/.])\bGithub)|(?:Github\b([^/.]))/
-  - expected: $1GitHub$2
-    pattern:  /(?:([^/.])undefined)|(?:undefined([^/.]))/
   - expected: Git
     pattern:  /\bGit\b/i
   - expected: Gmail
@@ -2992,9 +2990,9 @@ rules:
   - expected: XML Schema
     pattern:  /\bXML Schema\b/i
   - expected: Yahoo!$1
-    pattern:  /YAHOO\!([^!.])|\bYahoo\b([^!.])|\bYAHOO\b([^!.])|ヤフー([^!.])/
+    pattern:  /YAHOO!([^!.])|\bYahoo\b([^!.])|\bYAHOO\b([^!.])|ヤフー([^!.])/
   - expected: Yahoo!ウィジェット
-    pattern:  /\bYahooWidget\b|Yahoo\!Widget|Yahoo\! Widget|\bYahooGadget\b|Yahoo\!Gadget|Yahoo\! Gadget/
+    pattern:  /\bYahooWidget\b|Yahoo!Widget|Yahoo! Widget|\bYahooGadget\b|Yahoo!Gadget|Yahoo! Gadget/
   - expected: YouTube
     pattern:  /\bYoutube\b|\byoutube\b/
   - expected: YSlow
