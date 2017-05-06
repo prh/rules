@@ -9,7 +9,7 @@ meta:
 version: 1
 rules:
   - expected: "@<$1>{$2}" # 先頭 @ はyaml的にアレなのでダブルクォートで囲む
-    pattern:  /@([^{<>]+){([^}]+)}/
+    pattern:  /@([^{<>]+)\{([^}]+)\}/
     specs:
       - from: "@list{foo}"
         to:   "@<list>{foo}"
