@@ -1,0 +1,12 @@
+version: 1
+
+# Re:VIEW 形式に対する除外設定
+# listやcmdの中身を個別に prh:disable するのは難しいのでそもそもチェックしないようにする
+# 可能であればmapfileなどを組み合わせ、map先のファイル側を校正するようにしたい
+
+targets:
+  - file: /\.re$/
+    excludes:
+      # inline記法は prh:disable で個別に対処可能なのでここでは扱わない
+      - pattern: /^\/\/(list|emlist|cmd)(?:\[.*?\])*\{\n(?:.*\n)*\/\/\}/im
+      - pattern: /^#@.*$/
