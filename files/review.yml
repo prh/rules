@@ -8,5 +8,5 @@ targets:
   - file: /\.re$/
     excludes:
       # inline記法は prh:disable で個別に対処可能なのでここでは扱わない
-      - pattern: /^\/\/(list|emlist|cmd)(?:\[.*?\])*\{\n(?:.*\n)*\/\/\}/im
+      - pattern: /^\/\/(list|emlist|cmd)(?:\[.*?\])*\{\n(?:.*\n)*?\/\/\}/im
       - pattern: /^#@.*$/
