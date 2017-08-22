@@ -16,3 +16,6 @@ rules:
       - from: "@<list>{foo}"
         to:   "@<list>{foo}"
     prh: Re:VIEW記法の書き方を間違えていませんか？
+  - expected: ""
+    pattern:  /[\x00-\x08\x0E-\x1F\x7F]+/
+    prh: 不可視の制御コードが混入しています
