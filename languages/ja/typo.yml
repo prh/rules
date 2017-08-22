@@ -9,3 +9,7 @@ version: 1
 rules:
   - expected: なるほど
     pattern:  なほるど
+  - expected: で
+    pattern:  でで
+  - expected: を
+    pattern:  をを

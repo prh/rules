@@ -1540,7 +1540,7 @@ rules:
       - 代引
       - 代引き
     expected: 代金引換
-  - pattern: 割引
+  - pattern: /割引(?:き)?/
     expected: 割り引き
   - pattern:
       - ひとめ
@@ -2036,7 +2036,7 @@ rules:
   - expected: フィクスチャ
     pattern:  /フィクスチャー/
   - expected: フェイルオーバー
-    pattern:  /フェイルオーバ|フェールオーバー|フェールオーバ/
+    pattern:  /フェイルオーバ(?!ー)|フェールオーバー|フェールオーバ(?!ー)/
   - expected: フェーズ
     pattern:  /フェイズ/
   - expected: フッタ
@@ -2059,7 +2059,7 @@ rules:
   - expected: ペアプログラミング$1
     pattern:  /ペアプロ([^グ])/
   - expected: ベンダー
-    pattern:  /ベンダ([^ー])/
+    pattern:  /ベンダ(?!ー)/
   - expected: ヘッダ
     pattern:  /ヘッダー|ヘッタ|ヘッター/
   - expected: ベクタ
@@ -2085,7 +2085,7 @@ rules:
   - expected: マネジメント
     pattern:  /マネージメント/
   - expected: メーカー
-    pattern:  /メーカ/
+    pattern:  /メーカ(?!ー)/
   - expected: メーリングリスト
     pattern:  /\bML\b(?!系)/
     specs:
@@ -2188,7 +2188,7 @@ rules:
   - expected: 要素
     pattern:  /エレメント/
   - expected: アニメーター
-    pattern:  /アニメータ/
+    pattern:  /アニメータ(?!ー)/
   - expected: キャラクタ$1
     pattern:  /キャラクター([^ー])/
   - expected: コミッター$1
@@ -2229,7 +2229,7 @@ rules:
   - expected: マネージャー$1
     pattern:  /マネージャ([^ー])/
   - expected: メンテナー$1
-    pattern:  /メンテナ([^ー])/
+    pattern:  /メンテナ(?!ンス)([^ー]|)/
   - expected: メンバー
     # 人間の意味では「メンバー」、変数などは「メンバ」
     pattern:  /メンバ(?!ー)/
@@ -3012,7 +3012,8 @@ rules:
   - expected: する
     pattern:  /するする/
   - expected: て
-    pattern:  /てて/
+    pattern:  /(当)?てて/
+    regexpMustEmpty: $1
   - expected: で
     pattern:  /でで/
   - expected: $1の
