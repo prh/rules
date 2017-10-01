@@ -276,7 +276,7 @@ rules:
     prh: C87でざきさんがやらかした思い出
 
   # その他
-  - expected: コード保管
-    pattern:  コード補完
+  - expected: コード補完
+    pattern:  コード保管
     prh: コード補完の間違いと思われます。
 
