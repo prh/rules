@@ -587,11 +587,17 @@ rules:
     expected: づら$1
   - pattern: んで([たなるろよ])
     expected: んでい$1
-  - pattern: /てな(?!く)/
-    expected: ていな
+  - pattern: /ってな(?!く)/
+    expected: っていな
     specs:
       - from: わかってない
         to:   わかっていない
+      - from: 言ってない
+        to:   言っていない
+      - from: 走ってない
+        to:   走っていない
+      - from: 持てない
+        to:   持てない
       - from: 消えてなくなる
         to:   消えてなくなる
   - pattern: /([^捨当立])てる/
