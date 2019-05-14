@@ -1335,8 +1335,13 @@ rules:
     expected: 内蔵
   - pattern: /なか([かでに])/
     expected: 中$1
-  - pattern: /なら([ばびぶべぼん])/
+  - pattern: /なら(ば(?!、)|[びぶべぼん])/
     expected: 並$1
+    specs:
+      - from: ならびに
+        to:   並びに
+      - from: ならば、
+        to:   ならば、
   - pattern: /著わ([さしすせそ])/
     expected: 著$1
   - pattern: 著い
