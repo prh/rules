@@ -653,7 +653,7 @@ rules:
       - 取り敢えず
     expected: とりあえず
   - pattern: /([^有])無([かくいけし])/
-    expected: $1な$1
+    expected: $1な$2
   - pattern: /尚([^早徳])/
     expected: なお$1
   - pattern:
