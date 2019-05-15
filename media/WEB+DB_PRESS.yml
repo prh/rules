@@ -3020,3 +3020,12 @@ rules:
     pattern:  /([^も])のの/
   - expected: は
     pattern:  /はは/
+# WEB+DB PRESS：2016年度フロントエンド連載 で追加
+  - expected: Angular 2
+    pattern:  Angular2
+  - expected: わか
+    pattern:  分か
+  - expected: ほか$1
+    pattern:  /他([にの])/
+  - expected: ごと$1
+    pattern:  /毎([にの])/
