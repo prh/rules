@@ -587,11 +587,17 @@ rules:
     expected: づら$1
   - pattern: んで([たなるろよ])
     expected: んでい$1
-  - pattern: /てな(?!く)/
-    expected: ていな
+  - pattern: /ってな(?!く)/
+    expected: っていな
     specs:
       - from: わかってない
         to:   わかっていない
+      - from: 言ってない
+        to:   言っていない
+      - from: 走ってない
+        to:   走っていない
+      - from: 持てない
+        to:   持てない
       - from: 消えてなくなる
         to:   消えてなくなる
   - pattern: /([^捨当立])てる/
@@ -653,7 +659,7 @@ rules:
       - 取り敢えず
     expected: とりあえず
   - pattern: /([^有])無([かくいけし])/
-    expected: $1な$1
+    expected: $1な$2
   - pattern: /尚([^早徳])/
     expected: なお$1
   - pattern:
@@ -1329,8 +1335,13 @@ rules:
     expected: 内蔵
   - pattern: /なか([かでに])/
     expected: 中$1
-  - pattern: /なら([ばびぶべぼん])/
+  - pattern: /なら(ば(?!、)|[びぶべぼん])/
     expected: 並$1
+    specs:
+      - from: ならびに
+        to:   並びに
+      - from: ならば、
+        to:   ならば、
   - pattern: /著わ([さしすせそ])/
     expected: 著$1
   - pattern: 著い
