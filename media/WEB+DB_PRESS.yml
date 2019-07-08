@@ -1679,8 +1679,6 @@ rules:
   - expected: $1Web$2
     pattern:  /(?:([^/])ウェブ)|(?:ウェブ([^/\+]))/
   - expected: $1Web$2
-    pattern:  /(?:([^/])\bWEB)|(?:WEB\b([^/\+]))/
-  - expected: $1Web$2
     pattern:  /(?:([^/])ウェッブ)|(?:ウェッブ([^/\+]))/
   - expected: O/Rマッ
     pattern:  /ORマッ|O-Rマッ/
@@ -3033,3 +3031,5 @@ rules:
     pattern:  /([^も])のの/
   - expected: は
     pattern:  /はは/
+  - expected: "WEB+DB PRESS"
+    pattern:  /WEB\+DB PRESS/i
