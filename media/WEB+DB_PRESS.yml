@@ -617,6 +617,8 @@ rules:
       - することができ
       - することが可能で
     expected: でき
+  - pattern: するようになります
+    expected: します
   - pattern: るようになります
     expected: ます
   - pattern: て欲し
