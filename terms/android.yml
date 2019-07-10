@@ -1,8 +1,5 @@
 # Rules for Android
 meta:
-  reviewer:
-    - vvakame
-    - mhidaka
   related: https://www.android.com/ 
   rules:   https://github.com/prh/rules
 

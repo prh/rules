@@ -1,7 +1,5 @@
 # Rules for JavaScript
 meta:
-  reviewer:
-    - vvakame
   related: http://www.ecma-international.org/publications/standards/Ecma-262.htm 
   rules:   https://github.com/prh/rules
 
