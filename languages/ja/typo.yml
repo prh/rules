@@ -14,9 +14,11 @@ rules:
     specs:
       - from: でで
         to:   で
+      - from: そこでで、
+        to:   そこで、
       - from: Aでできる
         to:   Aでできる
-      - from: までです
-        to: までです
+      - from: Aまでです
+        to:   Aまでです
   - expected: を
     pattern:  をを
