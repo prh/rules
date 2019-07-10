@@ -10,11 +10,15 @@ rules:
   - expected: なるほど
     pattern:  なほるど
   - expected: で
-    pattern:  /でで(?!きる)/
+    pattern:  /(?<!ま)でで(?!(きる|きます|す))/
     specs:
       - from: でで
         to:   で
+      - from: そこでで、
+        to:   そこで、
       - from: Aでできる
         to:   Aでできる
+      - from: Aまでです
+        to:   Aまでです
   - expected: を
     pattern:  をを
