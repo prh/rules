@@ -1,8 +1,5 @@
 # Rules for WEB+DB PRESS
 meta:
-  reviewer:
-    - vvakame
-    - mhidaka
   related: http://gihyo.jp/magazine/wdpress
   rules:   https://github.com/prh/rules
 

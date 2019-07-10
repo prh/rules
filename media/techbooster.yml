@@ -1,8 +1,5 @@
 # Rules for TechBooster
 meta:
-  reviewer:
-    - vvakame
-    - mhidaka
   related: http://techbooster.org/
   rules:   https://github.com/prh/rules
 
