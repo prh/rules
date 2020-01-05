@@ -108,7 +108,7 @@ rules:
       - from: 当事
         to:   当事
   - expected: $1とき
-    pattern:  /(の)時(?!点|代|々|間)/
+    pattern:  /(の)時(?!点|代|々|間|期)/
     specs:
       - from: その時
         to:   そのとき
@@ -134,6 +134,8 @@ rules:
         to:   時代
       - from: 時間
         to:   時間
+      - from: 時期
+        to:   時期
     prh: 漢字で書かず、ひらがなで書くと読みやすくなります
   - expected: でき$1
     pattern:  /出来(る|て|た|ま|上が)/
