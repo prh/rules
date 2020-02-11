@@ -1221,7 +1221,7 @@ rules:
     expected: 語ら$1
   - pattern: /交([らりるれろっ])/
     expected: 交わ$1
-  - pattern: /行な([わいうえおっ])|おこな([わいうえおっ])/
+  - pattern: /(?:行|おこ)な([わいうえおっ])/
     expected: 行$1
   - pattern: あわて
     expected: 慌
