@@ -1223,6 +1223,17 @@ rules:
     expected: 交わ$1
   - pattern: /(?:行|おこ)な([わいうえおっ])/
     expected: 行$1
+    specs:
+      - from: 行なう
+        to:   行う
+      - from: 行なった
+        to:   行った
+      - from: おこなう
+        to:   行う
+      - from: おこなった
+        to:   行った
+      - from: おこない
+        to:   行い
   - pattern: あわて
     expected: 慌
   - pattern: あわ
