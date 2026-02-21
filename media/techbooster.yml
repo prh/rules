@@ -258,6 +258,12 @@ rules:
   - expected: 。
     pattern:  ．
     prh: カンマとコンマではなく句点読点を使います。
+  - expected: ―
+    pattern:  —
+    prh: EM DASH(U+2014)はIPAフォントで印刷すると文字化けしてしまいます
+  - expected: ―
+    pattern:  ‒
+    prh: FIGURE DASH(U+2012)はIPAフォントで印刷すると文字化けしてしまいます
   # footnoteの末尾は読点を使わない
   # タイトル見出しの末尾は読点を使わない
   # 表、コード見出しの末尾は読点を使わない
